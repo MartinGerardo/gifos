@@ -1,0 +1,3127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-top: 5px solid #572EE5;
+  background: #FFFFFF;
+  z-index: 10;
+}
+
+header div#logo {
+  cursor: pointer;
+}
+
+header img.imgDiurna {
+  margin: 19px 0 17px 22px;
+}
+
+header img.imgDark {
+  margin: 19px 0 17px 22px;
+  display: none;
+}
+
+header img.imgDes {
+  display: none;
+}
+
+header img.imgDesNoc {
+  display: none;
+}
+
+header input#menu {
+  display: none;
+}
+
+header div#boxSearch {
+  display: none;
+}
+
+header div#boxSearch input.search {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+header div#boxSearch button {
+  border: none;
+  background: none;
+}
+
+header label {
+  cursor: pointer;
+  margin-right: 38px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+header label span.linea {
+  background: rgba(87, 46, 229, 0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  padding-top: 2px;
+  height: 2px;
+  width: 18px;
+  border-radius: 100px;
+}
+
+header label span.linea:nth-of-type(1) {
+  top: -200%;
+}
+
+header label span.linea:nth-of-type(2) {
+  top: 0%;
+}
+
+header label span.linea:nth-of-type(3) {
+  top: 200%;
+}
+
+header nav.container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: rgba(87, 46, 229, 0.9);
+  width: 100%;
+  padding: 0 16px 440px;
+  text-decoration: none;
+}
+
+header nav.container ul.box {
+  display: -ms-grid;
+  display: grid;
+  padding: 0 16px;
+  text-align: center;
+  justify-items: center;
+  list-style: none;
+  outline: none;
+}
+
+header nav.container ul.box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 12px 0;
+}
+
+header nav.container ul.box li a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+header nav.container ul.box li.linea {
+  width: 41px;
+  height: 0.1px;
+  opacity: 0.5;
+  border: 0.1px solid #FFFFFF;
+}
+
+header nav.container ul.box li#creaPropioGif {
+  display: none;
+}
+
+header nav.container ul.box li#creaPropioGif span i {
+  display: none;
+}
+
+header input#menu:checked ~ nav.container {
+  display: inline;
+}
+
+header input[type="checkbox"]:checked + label span.linea:nth-of-type(1) {
+  -webkit-transform: rotate(-45deg) scaleX(1.1);
+          transform: rotate(-45deg) scaleX(1.1);
+  top: 0;
+}
+
+header input[type="checkbox"]:checked + label span.linea:nth-of-type(2) {
+  opacity: 0;
+}
+
+header input[type="checkbox"]:checked + label span.linea:nth-of-type(3) {
+  -webkit-transform: rotate(45deg) scaleX(1.1);
+          transform: rotate(45deg) scaleX(1.1);
+  top: 0;
+}
+
+@media screen and (min-width: 700px) {
+  header label span.linea {
+    display: none;
+  }
+  header nav.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    background: none;
+    position: static;
+    width: 65%;
+    padding: 0;
+  }
+  header nav.container ul.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
+  header nav.container ul.box li {
+    margin: 0 20px;
+  }
+  header nav.container ul.box li a {
+    color: #572EE5;
+    font-size: 0.8125rem;
+  }
+  header nav.container ul.box li a:hover {
+    border-bottom: 2px solid #5ed7c6;
+  }
+  header nav.container ul.box li a:active {
+    color: #9cafc3;
+  }
+  header nav.container ul.box li.linea {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  header img.imgDiurna {
+    display: none;
+    margin: 19px 0 17px 156px;
+  }
+  header img.imgDark {
+    margin: 19px 0 17px 156px;
+    display: none;
+  }
+  header img.imgDes {
+    display: inline;
+    margin: 19px 0 17px 156px;
+  }
+  header img.imgDesNoc {
+    display: none;
+    margin: 19px 0 17px 156px;
+  }
+  header label span.linea {
+    display: none;
+  }
+  header nav.container {
+    padding: 0;
+    padding-right: 126px;
+    width: auto;
+  }
+  header nav.container ul.box li {
+    margin: 0 24px;
+  }
+  header nav.container ul.box li#creaPropioGif {
+    display: block;
+  }
+  header nav.container ul.box li#creaPropioGif span {
+    display: block;
+    padding: 19px;
+    border: #572EE5 solid;
+    border-radius: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
+  header nav.container ul.box li#creaPropioGif span i {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #572EE5;
+    z-index: 2;
+  }
+  header nav.container ul.box li#creaPropioGif span:hover {
+    background-color: #572EE5;
+  }
+  header nav.container ul.box li#creaPropioGif span:hover i {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header div#boxSearch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 334px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #572EE5;
+    border-radius: 27px;
+    visibility: hidden;
+    position: relative;
+  }
+  header div#boxSearch input.search {
+    margin: 12px 0px 12px 54px;
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  header div#boxSearch button {
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  header div#boxSearch button img.lupaDia {
+    display: block;
+  }
+  header div#boxSearch button img.lupaNoche {
+    display: none;
+  }
+  header nav.container {
+    padding: 0;
+    padding-right: 126px;
+    width: auto;
+  }
+  header nav.container ul.box li {
+    margin: 0 22px;
+  }
+}
+
+main section.head {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+main section.head div.boxTitle {
+  padding: 7px 45px 0;
+}
+
+main section.head div.boxTitle h1 {
+  text-align: center;
+  font-size: 1.56rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(87, 46, 229, 0.9);
+}
+
+main section.head div.boxTitle h1 br {
+  display: none;
+}
+
+main section.head div.boxTitle h1 B {
+  font-size: 1.56rem;
+  color: #50E3C2;
+}
+
+main section.head img.imgSaludo {
+  width: 273px;
+  margin: 31px 51px 0 51px;
+}
+
+main section.head div#boxSearch-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 334px;
+  background: #FFFFFF;
+  border: 1px solid #572EE5;
+  border-radius: 27px;
+  padding: 10px 0;
+}
+
+main section.head div#boxSearch-main i#glassSearch {
+  visibility: hidden;
+  font-size: 14px;
+  width: 14px;
+  padding-left: 20px;
+  color: #9CAFC3;
+  position: relative;
+  right: 20px;
+}
+
+main section.head div#boxSearch-main i#glassSearchVis {
+  display: block;
+  color: #572EE5;
+  width: 18px;
+}
+
+main section.head div#boxSearch-main i.fas.fa-times {
+  color: #572EE5;
+}
+
+main section.head div#boxSearch-main input.search {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: none;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+}
+
+main section.head div#boxSearch-main div.suggest {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: relative;
+  text-align: left;
+  top: 2vh;
+  width: 98%;
+  margin: 0 2.5px;
+  margin-bottom: 18px;
+  padding-left: 23px;
+  font-family: "Roboto", sans-serif;
+  border-top: 1px solid rgba(156, 175, 195, 0.5);
+  color: #9CAFC3;
+}
+
+main section.head div#boxSearch-main div.suggest label {
+  margin: 5px 0;
+}
+
+main section.head h2.tranding {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(87, 46, 229, 0.9);
+  margin: 31px 0 0 0;
+}
+
+main section.head p.textTran {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: #572EE5;
+  text-align: center;
+  line-height: 25px;
+  width: 225px;
+  margin-bottom: 35px;
+}
+
+main section.head img.heartIconF {
+  display: none;
+  margin: 10px 0 8px 0;
+}
+
+main section.head img.faceMisGifos {
+  display: none;
+  margin: 10px 0 8px 0;
+}
+
+main section.head img.favContentOff {
+  display: none;
+  margin-top: 14vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main section.head img.mGContentOff {
+  display: none;
+  margin-top: 14vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main section.head img#srchSinCont {
+  display: none;
+}
+
+main section.head h3#textSrchOff {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  color: #50E3C2;
+  margin: 37px 35vw 137px 35vw;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+main section.head h3#favTextOff {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  color: #50E3C2;
+  margin: 37px 35vw 137px 35vw;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+main section.head h3#textMiGif {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  color: #50E3C2;
+  margin: 37px 35vw 137px 35vw;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+main section.head div h3.titleSearch {
+  font-family: "Montserrat", sans-serif;
+  color: #572EE5;
+  font-size: 1.5rem;
+  margin-bottom: 36px;
+  padding-top: 43px;
+  border-top: 1px solid #9CAFC3;
+}
+
+main section.head div#containerSearch {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+  row-gap: 25px;
+}
+
+main section.head div#containerSearch div.hoverSearch {
+  display: block;
+  width: 156px;
+  height: 120px;
+  background: #572EE5;
+}
+
+main section.head div#containerSearch div.hoverSearch div.classFav {
+  display: none;
+}
+
+main section.head div#containerSearch div.hoverSearch div.classDown {
+  display: none;
+}
+
+main section.head div#containerSearch div.hoverSearch div.classMax {
+  display: none;
+}
+
+main section.head div#containerSearch div.hoverSearch img {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+
+main section.head div#containerSearch div.hoverSearch div.textContainer {
+  display: none;
+}
+
+main section.head div#containerSearch div.hoverSearch img.cruz {
+  display: none;
+}
+
+main section.head h3.verMas {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  main section.head div.boxTitle h1 {
+    font-size: 2.187rem;
+  }
+  main section.head div.boxTitle h1 br {
+    display: inline;
+  }
+  main section.head div.boxTitle h1 B {
+    font-size: 2.187rem;
+  }
+  main section.head img.imgSaludo {
+    width: 399px;
+  }
+  main section.head div#boxSearch-main {
+    width: 551px;
+  }
+  main section.head div#boxSearch-main div.font-container i#glassSearch {
+    font-size: 24px;
+  }
+  main section.head div#boxSearch-main div.font-container i#glassSearchVis {
+    margin: 0% 0% 0% 55%;
+    font-size: 24px;
+  }
+  main section.head div#boxSearch-main div.font-container i.fas.fa-times {
+    font-size: 24px;
+  }
+  main section.head h2.tranding {
+    font-size: 1.125rem;
+  }
+  main section.head p.textTran {
+    margin: 7px 0 95px 0;
+    width: auto;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main section.head div#containerSearch {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 21px;
+            column-gap: 21px;
+    row-gap: 25px;
+  }
+  main section.head div#containerSearch div.hoverSearch {
+    display: block;
+    width: 260px;
+    height: 200px;
+    background: #572EE5;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover {
+    display: block;
+    width: 260px;
+    height: 200px;
+    opacity: 0.9;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover img.imgSearch {
+    display: block;
+    opacity: 0.5;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classFav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -191px;
+    left: 133px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classFav:hover {
+    opacity: 1;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classFav i {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+    color: #572EE5;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -222px;
+    left: 176px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classDown:hover {
+    opacity: 1;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classMax {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -254px;
+    left: 218px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classMax:hover {
+    opacity: 1;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.textContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-line-pack: start;
+        align-content: start;
+    visibility: visible;
+    position: relative;
+    color: #FFFFFF;
+    top: -85%;
+    left: 18px;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.head div#containerSearch div.hoverSearch img {
+    display: block;
+    width: 260px;
+    height: 200px;
+  }
+  main section.head div#containerSearch div.hoverSearch div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+body.light-dark {
+  background-color: #37383C;
+}
+
+body.light-dark header {
+  background-color: #37383C;
+  border-top: 5px solid #000000;
+}
+
+body.light-dark header div#boxSearch input#inputSearch-header {
+  color: #FFFFFF;
+}
+
+body.light-dark header img.imgDiurna {
+  display: none;
+  margin: 19px 0 17px 22px;
+}
+
+body.light-dark header img.imgDark {
+  margin: 19px 0 17px 22px;
+  display: block;
+}
+
+body.light-dark header img.imgDesNoc {
+  display: none;
+}
+
+body.light-dark header input#menu {
+  display: none;
+}
+
+body.light-dark header label span.linea {
+  background: #ffffff;
+}
+
+body.light-dark header nav.container {
+  background: #000000;
+}
+
+@media screen and (min-width: 700px) {
+  body.light-dark header nav.container {
+    background: #37383C;
+  }
+}
+
+body.light-dark main section.head div.boxTitle h1 {
+  color: #FFFFFF;
+}
+
+body.light-dark main section.head img.imgSaludo {
+  width: 273px;
+  margin: 31px 51px 0 51px;
+}
+
+body.light-dark main section.head div#boxSearch-main {
+  background: #37383C;
+  border: 1px solid #FFFFFF;
+}
+
+body.light-dark main section.head div#boxSearch-main input.search {
+  border: none;
+  color: #FFFFFF;
+}
+
+body.light-dark main section.head div#boxSearch-main i.fas.fa-times {
+  color: #FFFFFF;
+}
+
+body.light-dark main section.head h2.tranding {
+  color: #FFFFFF;
+}
+
+body.light-dark main section.head p.textTran {
+  color: #FFFFFF;
+}
+
+body.light-dark main section.trendings {
+  background: #222326;
+}
+
+body.light-dark main section.trendings div#boxTrending h2 {
+  color: #FFFFFF;
+}
+
+body.light-dark main section.trendings div#boxTrending p {
+  color: #ffffff;
+}
+
+body.light-dark main section.sectionFilm div.deco img#camara {
+  display: none;
+}
+
+body.light-dark main section.sectionFilm div.deco img#camaraNoc {
+  display: block;
+}
+
+body.light-dark main section.sectionFilm div.film img#pelicula {
+  display: none;
+}
+
+body.light-dark main section.sectionFilm div.film img#peliculaNoc {
+  display: block;
+}
+
+body.light-dark main section.sectionFilm h4.BTN-letGoo {
+  background: #37383C;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+body.light-dark footer {
+  background: #37383C;
+  color: #FFFFFF;
+  border-bottom: 5px solid #000000;
+}
+
+@media screen and (min-width: 950px) {
+  body.light-dark header img.imgDes {
+    display: none;
+    margin: 19px 0 17px 156px;
+  }
+  body.light-dark header img.imgDesNoc {
+    display: block;
+    margin: 19px 0 17px 156px;
+  }
+  body.light-dark header img.imgDark {
+    margin: 19px 0 17px 22px;
+    display: none;
+  }
+  body.light-dark header img.imgDiurna {
+    display: none;
+  }
+  body.light-dark header nav.container ul.box li a {
+    color: #FFFFFF;
+  }
+  body.light-dark header nav.container ul.box li a:hover {
+    border-bottom: 2px solid #5ed7c6;
+  }
+  body.light-dark header nav.container ul.box li a:active {
+    color: #9cafc3;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span {
+    border: #FFFFFF solid;
+    background: #FFFFFF;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span i {
+    color: #000;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover {
+    background-color: #FFFFFF;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover i {
+    color: #000;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover:active {
+    background: #9CAFC3;
+    border: #9CAFC3 solid;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover:active i {
+    color: #FFF;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body.light-dark header div#boxSearch {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+  }
+  body.light-dark header div#boxSearch button img.lupaDia {
+    display: none;
+  }
+  body.light-dark header div#boxSearch button img.lupaNoche {
+    display: block;
+  }
+}
+
+main section.trendings {
+  background: #F3F5F8;
+  padding-top: 42px;
+  padding-bottom: 82px;
+}
+
+main section.trendings div#boxTrending h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+}
+
+main section.trendings div#boxTrending p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+  line-height: 23px;
+}
+
+main section.trendings div#boxGif div#leftBtn {
+  display: none;
+}
+
+main section.trendings div#boxGif div#rightBtn {
+  display: none;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[25];
+      grid-template-columns: repeat(25, 1fr);
+  gap: 22px;
+  margin: 0 32px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img {
+  display: block;
+  width: 243px;
+  height: 187px;
+  margin: 0;
+  padding: 0;
+  scroll-snap-align: center;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div.classFav {
+  display: none;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div.classDown {
+  display: none;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div img.hoverIcon {
+  display: none;
+  visibility: hidden;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div.classMax {
+  display: none;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover h6 {
+  display: none;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover p {
+  display: none;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img.cruz {
+  display: none;
+}
+
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif div.classMax {
+  display: none;
+}
+
+@media screen and (min-width: 950px) {
+  main section.trendings div#boxGif {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 16fr 2fr;
+        grid-template-columns: 2fr 16fr 2fr;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 10px;
+  }
+  main section.trendings div#boxGif div#leftBtn {
+    display: block;
+    -ms-grid-column-align: right;
+        justify-self: right;
+    margin: 130px 0;
+  }
+  main section.trendings div#boxGif div#leftBtn img {
+    border: 1px solid #572EE5;
+    padding: 13px 16px;
+  }
+  main section.trendings div#boxGif div#rightBtn {
+    display: block;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    margin: 130px 0;
+  }
+  main section.trendings div#boxGif div#rightBtn img {
+    border: 1px solid #572EE5;
+    padding: 13px 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg {
+    gap: 29px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    overflow-x: hidden;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover {
+    height: 275px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img.cruz {
+    display: none;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover {
+    display: block;
+    background: #572EE5;
+    opacity: 0.9;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover img.cruz {
+    display: none;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover img.hovercard {
+    display: block;
+    opacity: 0.5;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classFav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -260px;
+    left: 226px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classFav:hover {
+    opacity: 1;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classFav i {
+    color: #572EE5;
+    visibility: visible;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 18px;
+    height: 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -292px;
+    left: 270px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classDown:hover {
+    opacity: 1;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classMax {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -324px;
+    left: 314px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classMax:hover {
+    opacity: 1;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.textContainer {
+    display: block;
+    visibility: visible;
+    color: #FFFFFF;
+    position: relative;
+    top: -66%;
+    margin-left: 18px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img {
+    width: 357px;
+    height: 275px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  gap: 45px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 5px solid #572EE5;
+  background: #ffffff;
+}
+
+footer div.compartir {
+  margin: 47px 0px 0px 0px;
+}
+
+footer div.compartir h5 {
+  padding-bottom: 22px;
+  font-weight: normal;
+  font-size: 0,9375rem;
+  font-family: "Roboto", sans-serif;
+}
+
+footer div.compartir a i {
+  text-decoration: none;
+  color: #CDD6E0;
+  padding: 0 10px;
+}
+
+footer h6.rightFooter {
+  font-weight: normal;
+  font-size: 0,875rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 750px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer div.compartir {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding-left: 155px;
+  }
+  footer div.compartir h5 {
+    margin: 0;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+  footer div.compartir a i {
+    margin: 0;
+    padding: 0 10px;
+  }
+  footer h6.rightFooter {
+    font-weight: normal;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin: 47px 100px 0px 0px;
+  }
+}
+
+div.hoverImageGif div.classMax {
+  display: none;
+}
+
+div.hoverImageGif.expan {
+  content: '';
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  opacity: 1;
+}
+
+div.hoverImageGif.expan img {
+  display: block;
+  width: 318px;
+  height: 245px;
+  scroll-snap-align: center;
+  opacity: 1;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan img {
+    width: 415px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan img {
+    width: 525px;
+    height: 405px;
+  }
+}
+
+div.hoverImageGif.expan div.classSupr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.classSupr {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.classSupr {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.hoverImageGif.expan div.classSupr {
+    left: 64%;
+  }
+}
+
+div.hoverImageGif.expan div.classSupr:hover {
+  opacity: 1;
+}
+
+div.hoverImageGif.expan div.classSupr img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+
+div.hoverImageGif.expan div.classFav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.classFav {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.classFav {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.hoverImageGif.expan div.classFav {
+    left: 64%;
+  }
+}
+
+div.hoverImageGif.expan div.classFav:hover {
+  opacity: 1;
+}
+
+div.hoverImageGif.expan div.classFav i {
+  color: #572EE5;
+}
+
+div.hoverImageGif.expan div.classFav i.hoverIcon {
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+
+div.hoverImageGif.expan div.classFav i#hover {
+  display: block;
+}
+
+div.hoverImageGif.expan div.classDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 78%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.classDown {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.classDown {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.hoverImageGif.expan div.classDown {
+    left: 74%;
+  }
+}
+
+div.hoverImageGif.expan div.classDown:hover {
+  opacity: 1;
+}
+
+div.hoverImageGif.expan div.classDown img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 19.2px;
+  height: 21.1px;
+}
+
+div.hoverImageGif.expan div.textContainer {
+  display: block;
+  position: absolute;
+  top: 72%;
+  left: 16%;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.textContainer {
+    top: 80%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.textContainer {
+    top: 86%;
+  }
+}
+
+div.hoverImageGif.expan div.textContainer h6 {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  margin-top: 2vh;
+  margin-bottom: 51px;
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.textContainer h6 {
+    width: 80%;
+  }
+}
+
+div.hoverImageGif.expan div.textContainer p {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+}
+
+div.hoverImageGif.expan footer {
+  display: none;
+}
+
+div.hoverImageGif.expan main > section.head {
+  display: none;
+}
+
+div.hoverImageGif.expan main > section.trendings {
+  display: none;
+}
+
+div.hoverImageGif.expan header {
+  display: none;
+}
+
+div.hoverImageGif.expan img.cruz {
+  display: block;
+  position: absolute;
+  top: 14%;
+  left: 86%;
+  width: 13.8px;
+  height: 14px;
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan img.cruz {
+    top: 12%;
+    left: 89%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes {
+    content: '';
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .expanDes img.hovercard {
+    display: block;
+    opacity: 1;
+  }
+  .expanDes img {
+    display: block;
+    width: 459px;
+    height: 254px;
+    scroll-snap-align: center;
+    opacity: 1;
+    z-index: 25;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes img {
+    width: 580px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) {
+  .expanDes img {
+    width: 695px;
+    height: 385px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classFav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 66%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.classFav {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1300px) {
+  .expanDes div.classFav {
+    left: 64%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.classFav {
+    top: 78%;
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classFav:hover {
+    opacity: 1;
+  }
+  .expanDes div.classFav i {
+    display: block;
+    visibility: visible;
+    width: 20px;
+    height: 18px;
+  }
+  .expanDes div.classDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 70%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.classDown {
+    top: 78%;
+    left: 70.5%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1300px) {
+  .expanDes div.classDown {
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.classDown {
+    top: 78%;
+    left: 71.5%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classDown:hover {
+    opacity: 1;
+  }
+  .expanDes div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 19.2px;
+    height: 21.1px;
+  }
+  .expanDes div.classSupr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 66%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.classSupr {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1300px) {
+  .expanDes div.classSupr {
+    left: 64%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.classSupr {
+    top: 78%;
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classSupr:hover {
+    opacity: 1;
+  }
+  .expanDes div.textContainer {
+    display: block;
+    position: absolute;
+    top: 72%;
+    margin-right: 18%;
+    left: 26%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.textContainer {
+    top: 76%;
+    margin-right: 25%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.textContainer {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.textContainer h6 {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    width: 60%;
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 620px) {
+  .expanDes div.textContainer h6 {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.textContainer p {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-family: "Roboto", sans-serif;
+  }
+  .expanDes img.cruz {
+    display: block;
+    position: absolute;
+    top: 10.5%;
+    left: 72.5%;
+    width: 13.8px;
+    height: 14px;
+  }
+  .expanDes footer {
+    display: none;
+  }
+  .expanDes main > section.trendings {
+    display: none;
+  }
+  .expanDes header {
+    display: none;
+  }
+}
+
+main section.head h3.verMas.ACT {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #572EE5;
+  font-size: 0.8125rem;
+  padding: 17px 32px;
+  margin: 78px 0;
+  border-radius: 25px;
+  border: 1px solid #572EE5;
+  cursor: pointer;
+}
+
+main section.head h3.verMas.ACT:hover {
+  background-color: #572EE5;
+  color: #FFFFFF;
+}
+
+main section.head h3.verMasF.ACT {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #572EE5;
+  font-size: 0.8125rem;
+  padding: 17px 32px;
+  margin: 78px 0;
+  border-radius: 25px;
+  border: 1px solid #572EE5;
+  cursor: pointer;
+}
+
+main section.head h3.verMasF.ACT:hover {
+  background-color: #572EE5;
+  color: #FFFFFF;
+}
+
+div#titleGif.classFavoritos {
+  display: block;
+  color: #572EE5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 46px;
+}
+
+@media screen and (min-width: 1440px) {
+  div#titleGif.classFavoritos {
+    font-size: 1.5625rem;
+  }
+}
+
+div#titleGif.classTitleMisGifos {
+  display: block;
+  color: #572EE5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 46px;
+}
+
+@media screen and (min-width: 1440px) {
+  div#titleGif.classTitleMisGifos {
+    font-size: 1.5625rem;
+  }
+}
+
+main div.font-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 14fr 1fr;
+      grid-template-columns: 1fr 14fr 1fr;
+  gap: 10px;
+  padding: 0 3%;
+}
+
+@media screen and (min-width: 800px) {
+  main div.font-container {
+    gap: 35px;
+  }
+}
+
+div.containerMyGif {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+  row-gap: 25px;
+  margin-bottom: 10px;
+}
+
+div.contenedorMG {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+
+div.contenedorMG img {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+
+div.contenedorMG div.classSupr {
+  display: none;
+}
+
+div.contenedorMG div.classDown {
+  display: none;
+}
+
+div.contenedorMG div.classMax {
+  display: none;
+}
+
+div.contenedorMG div.textContainer {
+  display: none;
+}
+
+div.contenedorMG img.cruz {
+  display: none;
+}
+
+.sectionFilm {
+  display: none;
+  -ms-grid-columns: 26% 48% 26%;
+      grid-template-columns: 26% 48% 26%;
+  -ms-grid-rows: 390px 75px 105px;
+      grid-template-rows: 390px 75px 105px;
+}
+
+.sectionFilm .deco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionFilm .deco img#camaraNoc {
+  display: none;
+}
+
+.sectionFilm .deco img#camara {
+  display: block;
+}
+
+.sectionFilm .film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 20%;
+}
+
+.sectionFilm .film img#peliculaNoc {
+  display: none;
+}
+
+.sectionFilm .film img#pelicula {
+  display: block;
+}
+
+.sectionFilm .boxFilm {
+  margin: auto;
+  width: 100%;
+}
+
+.sectionFilm .boxFilm .recordingStudio {
+  border: 1px solid #572ee5;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45px auto 45px;
+      grid-template-columns: 45px auto 45px;
+  -ms-grid-rows: 45px 300px 45px;
+      grid-template-rows: 45px 300px 45px;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2/2;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #572ee5;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 90px;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #descripcion B {
+  font-size: 25px;
+  color: #50e3c2;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #desPermiso {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 29px;
+  margin-top: 3px;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm video {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm img {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #loader {
+  position: relative;
+  top: -190px;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+  left: 280px;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #subiendoGifo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  top: -180px;
+}
+
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #hoverCard {
+  opacity: 0.6;
+  background: #572ee5;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -347px;
+}
+
+.sectionFilm .boxFilm .recordingStudio #topLeft {
+  border-top: 1px solid #50e3c2;
+  border-left: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1/1;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.sectionFilm .boxFilm .recordingStudio #topRight {
+  border-top: 1px solid #50e3c2;
+  border-right: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: 1/3;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.sectionFilm .boxFilm .recordingStudio #bottonLeft {
+  border-bottom: 1px solid #50e3c2;
+  border-left: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: 3/1;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.sectionFilm .boxFilm .recordingStudio #bottoRight {
+  border-bottom: 1px solid #50e3c2;
+  border-right: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: 3/3;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.sectionFilm .boxFilm #instancia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+.sectionFilm .boxFilm #instancia .instancia {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #572ee5;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #572ee5;
+  margin: 0px 13px;
+}
+
+.sectionFilm .boxFilm #instancia .hover {
+  background: #572ee5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.sectionFilm .boxFilm #filmAgain {
+  visibility: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #572ee5;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  position: relative;
+  top: -50px;
+  left: 490px;
+  width: 200px;
+}
+
+.sectionFilm .pie {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: -2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 5/1/3/5;
+}
+
+.sectionFilm .pie .BTN-letGoo {
+  display: block;
+  cursor: pointer;
+  border: 1px solid #572ee5;
+  border-radius: 25px;
+  width: 127px;
+  height: 50px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #572ee5;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 50px;
+  margin: 20px auto 26px auto;
+}
+
+@media screen and (min-width: 820px) {
+  .sectionFilm .pie .BTN-letGoo:hover {
+    background-color: #572ee5;
+    color: #ffffff;
+  }
+}
+
+.sectionFilm .pie .lineaPur {
+  background-color: #572ee5;
+  width: 55%;
+  height: 7px;
+  border-radius: 3.5px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  div.containerMyGif {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 21px;
+            column-gap: 21px;
+    row-gap: 25px;
+  }
+  div.containerMyGif div.contenedorMG {
+    width: 260px;
+    height: 200px;
+  }
+  div.containerMyGif div.contenedorMG img.imgOwn {
+    width: 260px;
+    height: 200px;
+  }
+  div.containerMyGif div.contenedorMG img.cruz {
+    display: none;
+  }
+  div.containerMyGif div.contenedorMG:hover {
+    background: #572EE5;
+  }
+  div.containerMyGif div.contenedorMG:hover img {
+    opacity: 0.8;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classSupr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -230px;
+    left: 148px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classSupr:hover {
+    opacity: 1;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classSupr img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -262px;
+    left: 184px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classDown:hover {
+    opacity: 1;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classMax {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -294px;
+    left: 220px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classMax:hover {
+    opacity: 1;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.textContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-line-pack: start;
+        align-content: start;
+    visibility: visible;
+    position: relative;
+    color: #FFFFFF;
+    top: -35%;
+    left: 18px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  div.containerMyGif div.contenedorMG:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  div.containerMyGif div.contenedorMG img {
+    display: block;
+    width: 260px;
+    height: 200px;
+  }
+  div.containerMyGif div.contenedorMG div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+section.head div#containerFav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+  row-gap: 25px;
+}
+
+section.head div#containerFav div.GifHoverFav {
+  display: block;
+  width: 156px;
+  height: 120px;
+  background: #572EE5;
+}
+
+section.head div#containerFav div.GifHoverFav div.classFav {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav div.classFav i {
+  color: #572EE5;
+}
+
+section.head div#containerFav div.GifHoverFav div.classDown {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav div.classMax {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav img {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+
+section.head div#containerFav div.GifHoverFav div.textContainer {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav img.cruz {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav.expan {
+  content: '';
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  opacity: 1;
+}
+
+section.head div#containerFav div.GifHoverFav.expan img {
+  display: block;
+  width: 318px;
+  height: 245px;
+  scroll-snap-align: center;
+  opacity: 1;
+}
+
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan img {
+    width: 415px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan img {
+    width: 525px;
+    height: 405px;
+  }
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+    left: 64%;
+  }
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classSupr:hover {
+  opacity: 1;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classSupr img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classFav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classFav {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classFav {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classFav {
+    left: 64%;
+  }
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classFav:hover {
+  opacity: 1;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classFav i {
+  color: #572EE5;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classFav i.hoverIcon {
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classFav i#hover {
+  display: block;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 78%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+}
+
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classDown {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classDown {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classDown {
+    left: 74%;
+  }
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classDown:hover {
+  opacity: 1;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.classDown img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 19.2px;
+  height: 21.1px;
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.textContainer {
+  display: block;
+  position: absolute;
+  top: 72%;
+  margin-top: 4%;
+}
+
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.textContainer {
+    top: 80%;
+    margin-left: -26%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.textContainer {
+    top: 86%;
+    margin-left: -28%;
+  }
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.textContainer h6 {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  margin-top: 2vh;
+  margin-bottom: 51px;
+}
+
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.textContainer h6 {
+    width: 80%;
+  }
+}
+
+section.head div#containerFav div.GifHoverFav.expan div.textContainer p {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+}
+
+section.head div#containerFav div.GifHoverFav.expan footer {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav.expan main > section.head {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav.expan main > section.trendings {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav.expan header {
+  display: none;
+}
+
+section.head div#containerFav div.GifHoverFav.expan img.cruz {
+  display: block;
+  position: absolute;
+  top: 14%;
+  left: 86%;
+  width: 13.8px;
+  height: 14px;
+}
+
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan img.cruz {
+    top: 12%;
+    left: 89%;
+  }
+}
+
+section.head h3.verMasF {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 21px;
+            column-gap: 21px;
+    row-gap: 25px;
+  }
+  section.head div#containerFav div.GifHoverFav {
+    display: block;
+    width: 260px;
+    height: 200px;
+    background: #572EE5;
+  }
+  section.head div#containerFav div.GifHoverFav:hover {
+    display: block;
+    width: 260px;
+    height: 200px;
+    opacity: 0.9;
+  }
+  section.head div#containerFav div.GifHoverFav:hover img.imgFav {
+    display: block;
+    opacity: 0.5;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classFav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -191px;
+    left: 133px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classFav:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classFav img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -222px;
+    left: 176px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classDown:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classMax {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -254px;
+    left: 218px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classMax:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.textContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-line-pack: start;
+        align-content: start;
+    visibility: visible;
+    position: relative;
+    color: #FFFFFF;
+    top: -85%;
+    left: 18px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  section.head div#containerFav div.GifHoverFav img.imgFav {
+    display: block;
+    width: 260px;
+    height: 200px;
+  }
+  section.head div#containerFav div.GifHoverFav div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes {
+    content: '';
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes img.imgFav {
+    display: block;
+    width: 459px;
+    height: 254px;
+    scroll-snap-align: center;
+    opacity: 1;
+    z-index: 25;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes img.imgFav {
+    width: 580px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1440px) {
+  section.head div#containerFav div.GifHoverFav.expanDes img.imgFav {
+    width: 695px;
+    height: 385px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 66%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1300px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    left: 64%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1440px) and (max-width: 1590px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    top: 78%;
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav i {
+    display: block;
+    visibility: visible;
+    width: 20px;
+    height: 18px;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 70%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    top: 78%;
+    left: 70.5%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1300px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1440px) and (max-width: 1590px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    top: 78%;
+    left: 71.5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 19.2px;
+    height: 21.1px;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classMax {
+    display: none;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: 25%;
+    margin-right: 18%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer {
+    top: 76%;
+    margin-right: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1440px) and (max-width: 1590px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer {
+    top: 78%;
+    margin-right: 30%;
+    left: 26%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer h6 {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    width: 60%;
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer h6 {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer p {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-family: "Roboto", sans-serif;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes img.cruz {
+    display: block;
+    position: absolute;
+    top: 10.5%;
+    left: 72.5%;
+    width: 13.8px;
+    height: 14px;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes footer {
+    display: none;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes main > section.trendings {
+    display: none;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes header {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

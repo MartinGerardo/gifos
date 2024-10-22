@@ -1,0 +1,148 @@
+body.light-dark {
+  background-color: #37383C;
+}
+body.light-dark header {
+  background-color: #37383C;
+  border-top: 5px solid #000000;
+}
+body.light-dark header div#boxSearch input#inputSearch-header {
+  color: #FFFFFF;
+}
+body.light-dark header img.imgDiurna {
+  display: none;
+  margin: 19px 0 17px 22px;
+}
+body.light-dark header img.imgDark {
+  margin: 19px 0 17px 22px;
+  display: block;
+}
+body.light-dark header img.imgDesNoc {
+  display: none;
+}
+body.light-dark header input#menu {
+  display: none;
+}
+body.light-dark header label span.linea {
+  background: #ffffff;
+}
+body.light-dark header nav.container {
+  background: #000000;
+}
+@media screen and (min-width: 700px) {
+  body.light-dark header nav.container {
+    background: #37383C;
+  }
+}
+body.light-dark main section.head div.boxTitle h1 {
+  color: #FFFFFF;
+}
+body.light-dark main section.head img.imgSaludo {
+  width: 273px;
+  margin: 31px 51px 0 51px;
+}
+body.light-dark main section.head div#boxSearch-main {
+  background: #37383C;
+  border: 1px solid #FFFFFF;
+}
+body.light-dark main section.head div#boxSearch-main input.search {
+  border: none;
+  color: #FFFFFF;
+}
+body.light-dark main section.head div#boxSearch-main i.fas.fa-times {
+  color: #FFFFFF;
+}
+body.light-dark main section.head h2.tranding {
+  color: #FFFFFF;
+}
+body.light-dark main section.head p.textTran {
+  color: #FFFFFF;
+}
+body.light-dark main section.trendings {
+  background: #222326;
+}
+body.light-dark main section.trendings div#boxTrending h2 {
+  color: #FFFFFF;
+}
+body.light-dark main section.trendings div#boxTrending p {
+  color: #ffffff;
+}
+body.light-dark main section.sectionFilm div.deco img#camara {
+  display: none;
+}
+body.light-dark main section.sectionFilm div.deco img#camaraNoc {
+  display: block;
+}
+body.light-dark main section.sectionFilm div.film img#pelicula {
+  display: none;
+}
+body.light-dark main section.sectionFilm div.film img#peliculaNoc {
+  display: block;
+}
+body.light-dark main section.sectionFilm h4.BTN-letGoo {
+  background: #37383C;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+body.light-dark footer {
+  background: #37383C;
+  color: #FFFFFF;
+  border-bottom: 5px solid #000000;
+}
+@media screen and (min-width: 950px) {
+  body.light-dark header img.imgDes {
+    display: none;
+    margin: 19px 0 17px 156px;
+  }
+  body.light-dark header img.imgDesNoc {
+    display: block;
+    margin: 19px 0 17px 156px;
+  }
+  body.light-dark header img.imgDark {
+    margin: 19px 0 17px 22px;
+    display: none;
+  }
+  body.light-dark header img.imgDiurna {
+    display: none;
+  }
+  body.light-dark header nav.container ul.box li a {
+    color: #FFFFFF;
+  }
+  body.light-dark header nav.container ul.box li a:hover {
+    border-bottom: 2px solid #5ed7c6;
+  }
+  body.light-dark header nav.container ul.box li a:active {
+    color: #9cafc3;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span {
+    border: #FFFFFF solid;
+    background: #FFFFFF;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span i {
+    color: #000;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover {
+    background-color: #FFFFFF;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover i {
+    color: #000;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover:active {
+    background: #9CAFC3;
+    border: #9CAFC3 solid;
+  }
+  body.light-dark header nav.container ul.box li#creaPropioGif span:hover:active i {
+    color: #FFF;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.light-dark header div#boxSearch {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+  }
+  body.light-dark header div#boxSearch button img.lupaDia {
+    display: none;
+  }
+  body.light-dark header div#boxSearch button img.lupaNoche {
+    display: block;
+  }
+}/*# sourceMappingURL=nightStyle.css.map */

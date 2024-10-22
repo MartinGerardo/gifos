@@ -1,0 +1,581 @@
+section.head div#containerFav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+  row-gap: 25px;
+}
+section.head div#containerFav div.GifHoverFav {
+  display: block;
+  width: 156px;
+  height: 120px;
+  background: #572EE5;
+}
+section.head div#containerFav div.GifHoverFav div.classFav {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav div.classFav i {
+  color: #572EE5;
+}
+section.head div#containerFav div.GifHoverFav div.classDown {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav div.classMax {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav img {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+section.head div#containerFav div.GifHoverFav div.textContainer {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav img.cruz {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav.expan {
+  content: "";
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  opacity: 1;
+}
+section.head div#containerFav div.GifHoverFav.expan img {
+  display: block;
+  width: 318px;
+  height: 245px;
+  scroll-snap-align: center;
+  opacity: 1;
+}
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan img {
+    width: 415px;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan img {
+    width: 525px;
+    height: 405px;
+  }
+}
+section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+    top: 78%;
+  }
+}
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+    top: 86%;
+  }
+}
+@media screen and (min-width: 800px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classSupr {
+    left: 64%;
+  }
+}
+section.head div#containerFav div.GifHoverFav.expan div.classSupr:hover {
+  opacity: 1;
+}
+section.head div#containerFav div.GifHoverFav.expan div.classSupr img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+section.head div#containerFav div.GifHoverFav.expan div.classFav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classFav {
+    top: 78%;
+  }
+}
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classFav {
+    top: 86%;
+  }
+}
+@media screen and (min-width: 800px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classFav {
+    left: 64%;
+  }
+}
+section.head div#containerFav div.GifHoverFav.expan div.classFav:hover {
+  opacity: 1;
+}
+section.head div#containerFav div.GifHoverFav.expan div.classFav i {
+  color: #572EE5;
+}
+section.head div#containerFav div.GifHoverFav.expan div.classFav i.hoverIcon {
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+section.head div#containerFav div.GifHoverFav.expan div.classFav i#hover {
+  display: block;
+}
+section.head div#containerFav div.GifHoverFav.expan div.classDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 78%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+}
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classDown {
+    top: 78%;
+  }
+}
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classDown {
+    top: 86%;
+  }
+}
+@media screen and (min-width: 800px) {
+  section.head div#containerFav div.GifHoverFav.expan div.classDown {
+    left: 74%;
+  }
+}
+section.head div#containerFav div.GifHoverFav.expan div.classDown:hover {
+  opacity: 1;
+}
+section.head div#containerFav div.GifHoverFav.expan div.classDown img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 19.2px;
+  height: 21.1px;
+}
+section.head div#containerFav div.GifHoverFav.expan div.textContainer {
+  display: block;
+  position: absolute;
+  top: 72%;
+  margin-top: 4%;
+}
+@media screen and (min-width: 490px) {
+  section.head div#containerFav div.GifHoverFav.expan div.textContainer {
+    top: 80%;
+    margin-left: -26%;
+  }
+}
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.textContainer {
+    top: 86%;
+    margin-left: -28%;
+  }
+}
+section.head div#containerFav div.GifHoverFav.expan div.textContainer h6 {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  margin-top: 2vh;
+  margin-bottom: 51px;
+}
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan div.textContainer h6 {
+    width: 80%;
+  }
+}
+section.head div#containerFav div.GifHoverFav.expan div.textContainer p {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+}
+section.head div#containerFav div.GifHoverFav.expan footer {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav.expan main > section.head {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav.expan main > section.trendings {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav.expan header {
+  display: none;
+}
+section.head div#containerFav div.GifHoverFav.expan img.cruz {
+  display: block;
+  position: absolute;
+  top: 14%;
+  left: 86%;
+  width: 13.8px;
+  height: 14px;
+}
+@media screen and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expan img.cruz {
+    top: 12%;
+    left: 89%;
+  }
+}
+section.head h3.verMasF {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 21px;
+         column-gap: 21px;
+    row-gap: 25px;
+  }
+  section.head div#containerFav div.GifHoverFav {
+    display: block;
+    width: 260px;
+    height: 200px;
+    background: #572EE5;
+  }
+  section.head div#containerFav div.GifHoverFav:hover {
+    display: block;
+    width: 260px;
+    height: 200px;
+    opacity: 0.9;
+  }
+  section.head div#containerFav div.GifHoverFav:hover img.imgFav {
+    display: block;
+    opacity: 0.5;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classFav {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -191px;
+    left: 133px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classFav:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classFav img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classDown {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -222px;
+    left: 176px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classDown:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classMax {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -254px;
+    left: 218px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classMax:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.textContainer {
+    display: flex;
+    flex-flow: wrap row;
+    flex-direction: column;
+    align-items: start;
+    align-content: start;
+    visibility: visible;
+    position: relative;
+    color: #FFFFFF;
+    top: -85%;
+    left: 18px;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  section.head div#containerFav div.GifHoverFav:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  section.head div#containerFav div.GifHoverFav img.imgFav {
+    display: block;
+    width: 260px;
+    height: 200px;
+  }
+  section.head div#containerFav div.GifHoverFav div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes {
+    content: "";
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes img.imgFav {
+    display: block;
+    width: 459px;
+    height: 254px;
+    scroll-snap-align: center;
+    opacity: 1;
+    z-index: 25;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes img.imgFav {
+    width: 580px;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1440px) {
+  section.head div#containerFav div.GifHoverFav.expanDes img.imgFav {
+    width: 695px;
+    height: 385px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 66%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    top: 78%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1300px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    left: 64%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1440px) and (max-width: 1590px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav {
+    top: 78%;
+    left: 68%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classFav i {
+    display: block;
+    visibility: visible;
+    width: 20px;
+    height: 18px;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 70%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    top: 78%;
+    left: 70.5%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1300px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    left: 68%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1440px) and (max-width: 1590px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown {
+    top: 78%;
+    left: 71.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown:hover {
+    opacity: 1;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 19.2px;
+    height: 21.1px;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.classMax {
+    display: none;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: 25%;
+    margin-right: 18%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer {
+    top: 76%;
+    margin-right: 25%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1440px) and (max-width: 1590px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer {
+    top: 78%;
+    margin-right: 30%;
+    left: 26%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer h6 {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    width: 60%;
+    margin-bottom: 51px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 620px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer h6 {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.head div#containerFav div.GifHoverFav.expanDes div.textContainer p {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-family: "Roboto", sans-serif;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes img.cruz {
+    display: block;
+    position: absolute;
+    top: 10.5%;
+    left: 72.5%;
+    width: 13.8px;
+    height: 14px;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes footer {
+    display: none;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes main > section.trendings {
+    display: none;
+  }
+  section.head div#containerFav div.GifHoverFav.expanDes header {
+    display: none;
+  }
+}/*# sourceMappingURL=favoritos.css.map */

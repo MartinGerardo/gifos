@@ -1,0 +1,370 @@
+div.containerMyGif {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+  row-gap: 25px;
+  margin-bottom: 10px;
+}
+
+div.contenedorMG {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+div.contenedorMG img {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+div.contenedorMG div.classSupr {
+  display: none;
+}
+div.contenedorMG div.classDown {
+  display: none;
+}
+div.contenedorMG div.classMax {
+  display: none;
+}
+div.contenedorMG div.textContainer {
+  display: none;
+}
+div.contenedorMG img.cruz {
+  display: none;
+}
+
+.sectionFilm {
+  display: none;
+  grid-template-columns: 26% 48% 26%;
+  grid-template-rows: 390px 75px 105px;
+}
+.sectionFilm .deco {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.sectionFilm .deco img#camaraNoc {
+  display: none;
+}
+.sectionFilm .deco img#camara {
+  display: block;
+}
+.sectionFilm .film {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20%;
+}
+.sectionFilm .film img#peliculaNoc {
+  display: none;
+}
+.sectionFilm .film img#pelicula {
+  display: block;
+}
+.sectionFilm .boxFilm {
+  margin: auto;
+  width: 100%;
+}
+.sectionFilm .boxFilm .recordingStudio {
+  border: 1px solid #572ee5;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 45px auto 45px;
+  grid-template-rows: 45px 300px 45px;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm {
+  grid-area: 2/2;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #572ee5;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 90px;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #descripcion B {
+  font-size: 25px;
+  color: #50e3c2;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #desPermiso {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 29px;
+  margin-top: 3px;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm video {
+  width: 100%;
+  height: 100%;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm img {
+  width: 100%;
+  height: 100%;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #loader {
+  position: relative;
+  top: -190px;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+  left: 280px;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #subiendoGifo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  top: -180px;
+}
+.sectionFilm .boxFilm .recordingStudio #recordingFilm #hoverCard {
+  opacity: 0.6;
+  background: #572ee5;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -347px;
+}
+.sectionFilm .boxFilm .recordingStudio #topLeft {
+  border-top: 1px solid #50e3c2;
+  border-left: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  grid-area: 1/1;
+  justify-self: right;
+  align-self: flex-end;
+}
+.sectionFilm .boxFilm .recordingStudio #topRight {
+  border-top: 1px solid #50e3c2;
+  border-right: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  grid-area: 1/3;
+  justify-self: left;
+  align-self: flex-end;
+}
+.sectionFilm .boxFilm .recordingStudio #bottonLeft {
+  border-bottom: 1px solid #50e3c2;
+  border-left: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  grid-area: 3/1;
+  justify-self: right;
+  align-self: flex-start;
+}
+.sectionFilm .boxFilm .recordingStudio #bottoRight {
+  border-bottom: 1px solid #50e3c2;
+  border-right: 1px solid #50e3c2;
+  width: 25px;
+  height: 25px;
+  grid-area: 3/3;
+  justify-self: left;
+  align-self: flex-start;
+}
+.sectionFilm .boxFilm #instancia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+.sectionFilm .boxFilm #instancia .instancia {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #572ee5;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #572ee5;
+  margin: 0px 13px;
+}
+.sectionFilm .boxFilm #instancia .hover {
+  background: #572ee5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+.sectionFilm .boxFilm #filmAgain {
+  visibility: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #572ee5;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  position: relative;
+  top: -50px;
+  left: 490px;
+  width: 200px;
+}
+.sectionFilm .pie {
+  grid-area: 5/1/3/5;
+}
+.sectionFilm .pie .BTN-letGoo {
+  display: block;
+  cursor: pointer;
+  border: 1px solid #572ee5;
+  border-radius: 25px;
+  width: 127px;
+  height: 50px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #572ee5;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 50px;
+  margin: 20px auto 26px auto;
+}
+@media screen and (min-width:820px) {
+  .sectionFilm .pie .BTN-letGoo:hover {
+    background-color: #572ee5;
+    color: #ffffff;
+  }
+}
+.sectionFilm .pie .lineaPur {
+  background-color: #572ee5;
+  width: 55%;
+  height: 7px;
+  border-radius: 3.5px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  div.containerMyGif {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 21px;
+         column-gap: 21px;
+    row-gap: 25px;
+  }
+  div.containerMyGif div.contenedorMG {
+    width: 260px;
+    height: 200px;
+  }
+  div.containerMyGif div.contenedorMG img.imgOwn {
+    width: 260px;
+    height: 200px;
+  }
+  div.containerMyGif div.contenedorMG img.cruz {
+    display: none;
+  }
+  div.containerMyGif div.contenedorMG:hover {
+    background: #572EE5;
+  }
+  div.containerMyGif div.contenedorMG:hover img {
+    opacity: 0.8;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classSupr {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -230px;
+    left: 148px;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classSupr:hover {
+    opacity: 1;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classSupr img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classDown {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -262px;
+    left: 184px;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classDown:hover {
+    opacity: 1;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classMax {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -294px;
+    left: 220px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classMax:hover {
+    opacity: 1;
+  }
+  div.containerMyGif div.contenedorMG:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.textContainer {
+    display: flex;
+    flex-flow: wrap row;
+    flex-direction: column;
+    align-items: start;
+    align-content: start;
+    visibility: visible;
+    position: relative;
+    color: #FFFFFF;
+    top: -35%;
+    left: 18px;
+  }
+  div.containerMyGif div.contenedorMG:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  div.containerMyGif div.contenedorMG:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  div.containerMyGif div.contenedorMG img {
+    display: block;
+    width: 260px;
+    height: 200px;
+  }
+  div.containerMyGif div.contenedorMG div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=miGif.css.map */

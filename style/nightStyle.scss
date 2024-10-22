@@ -1,0 +1,230 @@
+@import"variables";
+body{
+    &.light-dark{
+        background-color:$darkBody;
+        header{
+            background-color: $darkBody;
+            border-top: 5px solid #000000;
+            div#boxSearch input#inputSearch-header{
+                color: #FFFFFF;
+            }
+            img.imgDiurna{
+                display: none;
+                margin: 19px 0 17px 22px ;
+            }
+            img.imgDark{
+                margin: 19px 0 17px 22px ;
+                display: block;
+            }
+            img.imgDesNoc{
+                display: none;
+            }
+            input#menu{
+                display: none;
+            
+            }
+                label{
+                    span.linea{
+                        background: #ffffff;
+                    }
+                }
+                nav.container{
+                    background: #000000;
+                }
+                @media screen and (min-width:700px){
+                    nav.container{
+                        background: $darkBody;
+                    }
+                }
+        }
+        main{
+            section.head{
+                div.boxTitle{
+                    h1{
+        
+                        color: #FFFFFF;
+                    }
+                }
+               img.imgSaludo{
+                    width: 273px;
+                    margin: 31px 51px 0 51px;
+                }
+                div#boxSearch-main{
+                    background: $darkBody;
+                    border: 1px solid #FFFFFF;
+                    input.search{
+                    border: none;
+                    color: #FFFFFF;
+                    }
+                    i.fas.fa-times{
+                        color: #FFFFFF;
+                    }
+                    // span{
+                    //         border: none;
+                    //         background: none;
+                            
+                    //         img.lupaWhite{
+                    //             display:block;
+                    //         }
+                    //         img.lupaPur {
+                    //             display: none;
+                    //         }
+                    // }
+                }
+                h2.tranding{
+                    color:#FFFFFF;
+                }
+                p.textTran{ 
+                    color: #FFFFFF;
+                }
+            }
+            section.trendings{
+                background: #222326;
+                div#boxTrending{
+                    h2{
+                        color: #FFFFFF;
+                    }
+                    p{
+                        color: #ffffff;
+                    }
+                }
+            }
+            section.sectionFilm{
+                div.deco{
+                    img#camara{
+                        display: none;
+                    }
+                    img#camaraNoc{
+                        display: block;
+                    }
+                }
+                div.film{
+                    img#pelicula{
+                        display: none;
+                    }
+                    img#peliculaNoc{
+                        display: block;
+                    }
+                }
+                h4.BTN-letGoo{
+                    background: #37383C ;
+                    border: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        footer{
+            background: $darkBody;
+            color:#FFFFFF;
+            border-bottom: 5px solid #000000 ;
+        }
+        
+        @media screen and (min-width:950px){
+            header{
+                img.imgDes{
+                    display: none;
+                    margin: 19px 0 17px 156px ;
+                }
+                img.imgDesNoc{
+                    display: block;
+                    margin: 19px 0 17px 156px ;
+                }
+                img.imgDark{
+                    margin: 19px 0 17px 22px ;
+                    display: none;
+                }
+                img.imgDiurna{
+                    display: none;
+                }
+                nav.container{
+                    ul.box{  
+                        li {
+                            a{                        
+                                color: #FFFFFF;
+                                &:hover {
+                                    border-bottom: 2px solid #5ed7c6;
+                                  }
+                                  &:active {
+                                    color: #9cafc3;
+                                  }
+                            }
+                        }
+                        // hr{
+                        //     display: none;
+                        // }
+                        li#creaPropioGif{
+                            span{
+
+                                border: #FFFFFF solid ; 
+                                background: #FFFFFF;                               
+
+                                i{
+
+                                    color: #000;
+
+                                }
+                                &:hover {
+                                    background-color: #FFFFFF ;
+                                    i {
+                                        color: #000;
+                                    }
+                                    &:active{
+                                        background: #9CAFC3;
+                                        border: #9CAFC3 solid ;
+                                        i{
+                                            color:#FFF;
+                                        }
+                                    }  
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width:1200px){
+            header{
+                div#boxSearch{            
+                    // display: flex;
+                    // flex-flow: row wrap;
+                    // justify-content: space-around;
+                    // align-items: center; 
+                    // width: 334px;
+                    // height: 50px;
+                    background: transparent;
+                    border: 1px solid #FFFFFF;
+                    // border-radius: 27px;
+                    // visibility: hidden;
+                    // position: relative;
+                    // input.search{
+                    //     // margin: 12px 0px 12px 54px;
+                    //     // justify-self: left;
+                    // }
+                    button{
+                        // margin: 12px 20px 12px 247px;
+                        // justify-self: left;
+                        img.lupaDia{
+                            display: none;
+                        }
+                        img.lupaNoche{
+                            display: block;
+                        }
+                    }
+                
+                }
+                // nav.container{
+                //     // padding: 0;
+                //     // padding-right: 126px;
+                //     // width: auto;
+                //     ul.box{  
+                //         li {
+                //             // margin:0 22px;
+                //         }                       
+                //     }
+                // }
+          
+            }
+        }
+    }
+
+}

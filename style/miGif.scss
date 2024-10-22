@@ -1,0 +1,400 @@
+@import"variables";
+div.containerMyGif{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 21px;
+    row-gap: 25px;
+    margin-bottom: 10px;
+}
+div.contenedorMG{
+  display: block;
+  width: 156px;
+  height: 120px;
+  // margin-bottom: 78px;
+      img{                            
+              display: block;
+              // position: absolute;
+              // left: 70%;
+              width: 156px;
+              height: 120px;
+      }
+      div.classSupr{
+          display: none;
+      }
+      div.classDown{
+          display: none;
+
+      }
+      div.classMax{
+          display: none;
+
+      }
+      div.textContainer{
+        display: none;
+
+      }
+      img.cruz{
+          display: none;
+          // visibility: hidden;
+    }
+}
+.sectionFilm {
+    display: none;
+    grid-template-columns: 26% 48% 26%;
+    grid-template-rows: 390px 75px 105px;
+    .deco {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      img#camaraNoc{
+        display: none;
+      }
+      img#camara{
+        display: block;
+      }
+    }
+    .film {
+      display: flex;
+      align-items: flex-end;
+      margin-left: 20%;
+      img#peliculaNoc{
+        display: none;
+      }
+      img#pelicula{
+        display: block;
+      }
+    }
+    .boxFilm {
+      margin: auto;
+      width: 100%;
+      .recordingStudio {
+        border: 1px solid #572ee5;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 45px auto 45px;
+        grid-template-rows: 45px 300px 45px;
+        #recordingFilm {
+          grid-area: 2/2;
+          #descripcion {
+            font-family: $montserratBold;
+            font-weight: 700;
+            font-size: 25px;
+            color: #572ee5;
+            text-align: center;
+            line-height: 35px;
+            margin-top: 90px;
+            B{
+              font-size: 25px;
+              color: #50e3c2;
+            }
+          }
+          #desPermiso {
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+            text-align: center;
+            line-height: 29px;
+            margin-top: 3px;
+          }
+          video {
+            width: 100%;
+            height: 100%;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          #loader {
+            position: relative;
+            top: -190px;
+            width: 22px;
+            height: 22px;
+            z-index: 2;
+            left: 280px;
+          }
+          #subiendoGifo {
+            font-family: $montserratBold;
+            font-weight: 700;
+            font-size: 15px;
+            color: #ffffff;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            top: -180px;
+          }
+          #hoverCard {
+            opacity: 0.6;
+            background: #572ee5;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: -347px;
+          }
+        }
+        #topLeft {
+          border-top: 1px solid #50e3c2;
+          border-left: 1px solid #50e3c2;
+          width: 25px;
+          height: 25px;
+          grid-area: 1/1;
+          justify-self: right;
+          align-self: flex-end;
+        }
+        #topRight {
+          border-top: 1px solid #50e3c2;
+          border-right: 1px solid #50e3c2;
+          width: 25px;
+          height: 25px;
+          grid-area: 1/3;
+          justify-self: left;
+          align-self: flex-end;
+        }
+        #bottonLeft {
+          border-bottom: 1px solid #50e3c2;
+          border-left: 1px solid #50e3c2;
+          width: 25px;
+          height: 25px;
+          grid-area: 3/1;
+          justify-self: right;
+          align-self: flex-start;
+        }
+        #bottoRight {
+          border-bottom: 1px solid #50e3c2;
+          border-right: 1px solid #50e3c2;
+          width: 25px;
+          height: 25px;
+          grid-area: 3/3;
+          justify-self: left;
+          align-self: flex-start;
+        }
+      }
+      #instancia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+        .instancia {
+          display: block;
+          width: 32px;
+          height: 32px;
+          border: 1px solid #572ee5;
+          border-radius: 50%;
+          line-height: 32px;
+          text-align: center;
+          font-family: $roboto;
+          font-weight: 500;
+          font-size: 18px;
+          color: #572ee5;
+          margin: 0px 13px;
+        }
+        .hover {
+          background: #572ee5;
+          font-family: $roboto;
+          font-weight: 500;
+          font-size: 18px;
+          color: #ffffff;
+        }
+      }
+      #filmAgain {
+        visibility: hidden;
+        font-family: $montserratBold;
+        font-weight: 700;
+        font-size: 18px;
+        color: #572ee5;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+        position: relative;
+        top: -50px;
+        left: 490px;
+        width: 200px;
+      }
+    }
+    .pie {
+      grid-area: 5/1/3/5;
+      .BTN-letGoo {
+        display: block;
+        cursor: pointer;
+        border: 1px solid #572ee5;
+        border-radius: 25px;
+        width: 127px;
+        height: 50px;
+        background-color: #ffffff;
+        font-family: $montserratBold;
+        font-weight: 700;
+        font-size: 13px;
+        color: #572ee5;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 50px;
+        margin: 20px auto 26px auto;
+        @media #{$middleup} {
+          &:hover {
+            background-color: #572ee5;
+            color: #ffffff;
+          }
+        }
+      }
+      .lineaPur {
+        background-color: #572ee5;
+        width: 55%;
+        height: 7px;
+        border-radius: 3.5px;
+        margin: auto;
+      }
+    }
+}
+@media screen and (min-width: 1440px){
+  div.containerMyGif{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap: 21px;
+    row-gap: 25px;
+
+    div.contenedorMG{
+        // display: block;
+        width: 260px;
+        height: 200px;
+          img.imgOwn{            
+            width: 260px;
+            height: 200px;
+          }
+          img.cruz{
+            display: none;
+          }
+        &:hover{
+          background: #572EE5;
+          img{
+            opacity: 0.8;
+          }
+          div.classSupr{
+                    display: flex;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    background: #FFFFFF;
+                    position: relative;
+                    top:-230px;
+                    left: 148px;
+                    align-items: center;
+                    padding: 1%;
+                    border-radius: 10px;
+                    opacity: 0.7;
+                    &:hover{
+                      // display: block;
+                        opacity: 1;
+                    }
+                    img.hoverIcon{
+                      display:block;
+                      visibility: visible;
+                      width: 18px;
+                      height: 16px;
+                    }
+                  }
+          div.classDown{
+                display: flex;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                background: #FFFFFF;
+                position: relative;
+                top:-262px;
+                left: 184px;
+                align-items: center;
+                padding: 1%;
+                border-radius: 10px;
+                opacity: 0.7;
+                &:hover{
+                    opacity: 1;
+                }
+                img.hoverIcon{
+                  display:block;
+                  visibility: visible;
+                  width: 18px;
+                  height: 16px;
+                }
+            }
+            div.classMax{
+              display: flex;
+              justify-content: center;
+              width: 32px;
+              height: 32px;
+              background: #FFFFFF;
+              position: relative;
+              top:-294px;
+              left: 220px;
+              align-items: center;
+              padding: 3%;
+              border-radius: 10px;
+              opacity: 0.7;
+              &:hover{
+                  opacity: 1;
+              }
+              img.hoverIcon{
+                  display:block;
+                  visibility: visible;
+                  width: 18px;
+                  height: 16px;
+              }
+          }
+          div.textContainer{
+              display: flex;
+              flex-flow: wrap row;
+              flex-direction: column;
+              align-items: start;
+              align-content: start;
+              visibility: visible;
+              position: relative;
+              color:#FFFFFF;
+              top: -35%;
+              left:18px;
+
+              // margin-top:4%;
+              // margin-left: 4%;
+              // @media screen and (min-width: 490px){
+              //     top:80%;
+              //     margin-left: -26%;
+              // }
+              // @media screen and (min-width: 620px){
+              //     top:86%;
+              //     margin-left: -28%;                            
+              // }
+              h6{
+                  display: block;
+                  // visibility: visible;
+                  // color:#000;
+                  font-size: 1rem;
+                  font-family: $roboto;
+                  
+                  // margin-bottom: 51px;
+                  // @media screen and (min-width: 620px){
+                  //     width: 80%;                            
+                  // } 
+              }
+              p{
+                  display: block;
+                  // visibility: visible;
+                  // color:#000;
+                  font-size: 15px;
+                  // margin-bottom: 6px;
+                  font-family: $roboto;
+              }    
+          }
+        } 
+        img{
+          display: block;
+          width: 260px;
+          height: 200px;
+      }
+      div{
+          img.hoverIcon{
+              display: none;
+              visibility: hidden;
+          }
+      }
+    }
+
+}
+}

@@ -1,0 +1,216 @@
+main section.trendings {
+  background: #F3F5F8;
+  padding-top: 42px;
+  padding-bottom: 82px;
+}
+main section.trendings div#boxTrending h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+}
+main section.trendings div#boxTrending p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+  line-height: 23px;
+}
+main section.trendings div#boxGif div#leftBtn {
+  display: none;
+}
+main section.trendings div#boxGif div#rightBtn {
+  display: none;
+}
+main section.trendings div#boxGif div#containerTrendingsImg {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  gap: 22px;
+  margin: 0 32px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img {
+  display: block;
+  width: 243px;
+  height: 187px;
+  margin: 0;
+  padding: 0;
+  scroll-snap-align: center;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div.classFav {
+  display: none;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div.classDown {
+  display: none;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div img.hoverIcon {
+  display: none;
+  visibility: hidden;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div.classMax {
+  display: none;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover h6 {
+  display: none;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover p {
+  display: none;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img.cruz {
+  display: none;
+}
+main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif div.classMax {
+  display: none;
+}
+
+@media screen and (min-width: 950px) {
+  main section.trendings div#boxGif {
+    display: grid;
+    grid-template-columns: 2fr 16fr 2fr;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  main section.trendings div#boxGif div#leftBtn {
+    display: block;
+    justify-self: right;
+    margin: 130px 0;
+  }
+  main section.trendings div#boxGif div#leftBtn img {
+    border: 1px solid #572EE5;
+    padding: 13px 16px;
+  }
+  main section.trendings div#boxGif div#rightBtn {
+    display: block;
+    justify-self: left;
+    margin: 130px 0;
+  }
+  main section.trendings div#boxGif div#rightBtn img {
+    border: 1px solid #572EE5;
+    padding: 13px 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg {
+    gap: 29px;
+    justify-content: space-between;
+    margin: 0;
+    justify-self: stretch;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover {
+    height: 275px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img.cruz {
+    display: none;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover {
+    display: block;
+    background: #572EE5;
+    opacity: 0.9;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover img.cruz {
+    display: none;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover img.hovercard {
+    display: block;
+    opacity: 0.5;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classFav {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -260px;
+    left: 226px;
+    align-items: center;
+    padding: 2%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classFav:hover {
+    opacity: 1;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classFav i {
+    color: #572EE5;
+    visibility: visible;
+    align-items: center;
+    width: 18px;
+    height: 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classDown {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -292px;
+    left: 270px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classDown:hover {
+    opacity: 1;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classMax {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -324px;
+    left: 314px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classMax:hover {
+    opacity: 1;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.textContainer {
+    display: block;
+    visibility: visible;
+    color: #FFFFFF;
+    position: relative;
+    top: -66%;
+    margin-left: 18px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover img {
+    width: 357px;
+    height: 275px;
+  }
+  main section.trendings div#boxGif div#containerTrendingsImg div.hoverImageGif.hover div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=trendings.main.css.map */

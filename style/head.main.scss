@@ -1,0 +1,373 @@
+@import"variables";
+main{
+    section.head{
+        display: grid;
+        justify-items: center;
+        div.boxTitle{
+            padding: 7px 45px 0;  
+            h1{
+                text-align: center;
+                font-size: 1.56rem; 
+                font-family:$montserratBold;        
+                color: rgba(87,46,229,0.90);
+                br{
+                    display: none;
+                }
+            }
+            h1 B{
+                font-size: 1.56rem; 
+                color: #50E3C2;
+            }
+
+        }
+      
+        img.imgSaludo{
+            width: 273px;
+            margin: 31px 51px 0 51px;
+        }
+        div#boxSearch-main{
+            display: flex;
+            flex-flow: row wrap;            
+            align-items: center;             
+            width: 334px;
+            background: #FFFFFF;
+            border: 1px solid #572EE5;
+            border-radius: 27px;
+            padding: 10px 0;
+            i#glassSearch{
+                visibility: hidden;
+                font-size: 14px;
+                width: 14px;
+                padding-left: 20px;
+                color:#9CAFC3;
+                position: relative;
+                right:20px;
+            
+            }
+            i#glassSearchVis{
+                display: block;
+                color:#572EE5;
+                width: 18px;
+            }
+            i.fas.fa-times{
+                color: #572EE5;
+            }
+            input.search{
+            border: none;
+            outline: none;
+            background: transparent;
+            border: none;
+            display: inline;
+            font-family: $roboto;
+            }
+            div.suggest{
+                display:none;
+                flex-flow: column nowrap;
+                position: relative;
+                text-align: left;
+                top: 2vh;
+                width: 98%;
+                margin:0 2.5px;
+                margin-bottom: 18px;
+                padding-left: 23px;
+                font-family: $roboto;
+                border-top: 1px solid rgba(156, 175, 195, 0.5);                     
+                color: #9CAFC3 ;
+                label{
+                    margin: 5px 0;
+                }                
+            }
+        }
+
+        h2.tranding{
+            font-size: 1rem; 
+            font-family:$montserratBold;        
+            color: rgba(87,46,229,0.90);
+            margin: 31px 0 0 0;
+        }
+        p.textTran{
+            font-family: $montserratBold;
+            font-size: 0.875rem;
+            color: #572EE5;
+            text-align: center;
+            line-height: 25px;
+            width: 225px;
+            margin-bottom: 35px;
+        }
+        img.heartIconF{
+            display: none;
+            margin: 10px 0 8px 0;
+        }
+        img.faceMisGifos{
+            display: none;
+            margin: 10px 0 8px 0;
+        }
+        img.favContentOff{
+            display: none;
+            margin-top: 14vh;
+            align-self: center;
+        }
+        img.mGContentOff{
+            display: none;
+            margin-top: 14vh;
+            align-self: center;
+        }
+        img#srchSinCont{
+            display: none;
+        }
+        h3#textSrchOff{
+            display: none;
+           font-family:$montserratBold;
+           color: #50E3C2;
+           margin: 37px 35vw 137px 35vw;
+           font-size: 1.375rem;
+           text-align: center;
+        }
+        h3#favTextOff{
+            display: none;
+           font-family:$montserratBold;
+           color: #50E3C2;
+           margin: 37px 35vw 137px 35vw;
+           font-size: 1.375rem;
+           text-align: center;
+        }
+        h3#textMiGif{
+            display: none;
+           font-family:$montserratBold;
+           color: #50E3C2;
+           margin: 37px 35vw 137px 35vw;
+           font-size: 1.375rem;
+           text-align: center;
+        }
+
+        div{
+            h3.titleSearch{
+                font-family: $montserratBold;
+                color:#572EE5;
+                font-size: 1.5rem;
+                margin-bottom: 36px;
+                padding-top: 43px;
+                border-top: 1px solid #9CAFC3 ;
+            }
+        }
+        div#containerSearch{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 21px;
+            row-gap: 25px;;
+            div.hoverSearch{
+                display: block;
+                width: 156px;
+                height: 120px;
+                background: #572EE5;
+                div.classFav{
+                    display: none;
+                }
+                div.classDown{
+                    display: none;
+                }
+                div.classMax{
+                    display: none;
+                }
+
+                img{
+                    display: block;
+                    width: 156px;
+                    height: 120px;
+                }
+                div.textContainer{
+                    display: none;
+        
+                }
+                img.cruz{
+                    display: none;
+                }
+
+            }
+        }
+        h3.verMas{
+            display: none;
+        }
+    }
+@media screen and (min-width:800px){
+    section.head{
+
+        div.boxTitle{
+            
+            h1{
+                
+                font-size: 2.187rem;
+                br{
+                    display: inline;
+                }
+            }
+            h1 B{
+                font-size: 2.187rem;
+            }
+        }
+      
+        img.imgSaludo{
+            width: 399px;
+        }
+        div#boxSearch-main{
+            width: 551px;
+            div.font-container{
+                i#glassSearch{
+                    font-size: 24px;
+                }
+                i#glassSearchVis{
+                    margin: 0% 0% 0% 55%;
+                    font-size:24px;
+                }
+                i.fas.fa-times{
+                    font-size:24px;
+                }
+            }
+
+
+        }
+        h2.tranding{
+            font-size: 1.125rem;
+        }
+        p.textTran{
+            margin:7px 0 95px 0;
+            width: auto;
+            text-decoration:none;
+            font-size: 1rem;
+        }
+    }
+}
+@media screen and (min-width:1200px){
+    section.head{
+
+        div#containerSearch{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            column-gap: 21px;
+            row-gap: 25px;;
+            div.hoverSearch{
+                display: block;
+                width: 260px;
+                height: 200px;
+                background: #572EE5;
+
+                &:hover{
+                    display: block;
+                    width: 260px;
+                    height: 200px;
+                    opacity: 0.9;
+                    img.imgSearch{                            
+                            display: block;
+                            opacity: 0.5;
+                    }
+                    div.classFav{
+                        display: flex;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        background: #FFFFFF;
+                        position: relative;
+                        top:-191px;
+                        left: 133px;
+                        align-items: center;
+                        padding: 3%;
+                        border-radius: 10px;
+                        opacity: 0.7;
+                        &:hover{
+                            opacity: 1;
+                        }
+                        i{
+                            display:block;
+                            visibility: visible;
+                            width: 18px;
+                            height: 16px;
+                            color: #572EE5;
+                        }
+                    }
+                    div.classDown{
+                        display: flex;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        background: #FFFFFF;
+                        position: relative;
+                        top:-222px;
+                        left: 176px;
+                        align-items: center;
+                        padding: 3%;
+                        border-radius: 10px;
+                        opacity: 0.7;
+                        &:hover{
+                            opacity: 1;
+                        }
+                        img.hoverIcon{
+                            display:block;
+                            visibility: visible;
+                            width: 18px;
+                            height: 16px;
+                        }
+                    }
+                    div.classMax{
+                        display: flex;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        background: #FFFFFF;
+                        position: relative;
+                        top:-254px;
+                        left: 218px;
+                        align-items: center;
+                        padding: 3%;
+                        border-radius: 10px;
+                        opacity: 0.7;
+                        &:hover{
+                            opacity: 1;
+                        }
+                        img.hoverIcon{
+                            display:block;
+                            visibility: visible;
+                            width: 18px;
+                            height: 16px;
+                        }
+                    }
+                    div.textContainer{
+                        display: flex;
+                        flex-flow: wrap row;
+                        flex-direction: column;
+                        align-items: start;
+                        align-content: start;
+                        visibility: visible;
+                        position: relative;
+                        color:#FFFFFF;
+                        top: -85%;
+                        left:18px;
+                        h6{
+                            display: block;
+                            font-size: 1rem;
+                            font-family: $roboto;
+                        }
+                        p{
+                            display: block;
+                            font-size: 15px;
+                            font-family: $roboto;
+                        }
+            
+                    }
+                    }
+                img{
+                    display: block;
+                    width: 260px;
+                    height: 200px;
+                }
+                div{
+                    img.hoverIcon{
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+
+            }
+        }
+    }
+}
+}

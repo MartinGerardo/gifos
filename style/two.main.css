@@ -1,0 +1,640 @@
+div.hoverImageGif div.classMax {
+  display: none;
+}
+
+div.hoverImageGif.expan {
+  content: '';
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  opacity: 1;
+}
+
+div.hoverImageGif.expan img {
+  display: block;
+  width: 318px;
+  height: 245px;
+  scroll-snap-align: center;
+  opacity: 1;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan img {
+    width: 415px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan img {
+    width: 525px;
+    height: 405px;
+  }
+}
+
+div.hoverImageGif.expan div.classSupr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.classSupr {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.classSupr {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.hoverImageGif.expan div.classSupr {
+    left: 64%;
+  }
+}
+
+div.hoverImageGif.expan div.classSupr:hover {
+  opacity: 1;
+}
+
+div.hoverImageGif.expan div.classSupr img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+
+div.hoverImageGif.expan div.classFav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.classFav {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.classFav {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.hoverImageGif.expan div.classFav {
+    left: 64%;
+  }
+}
+
+div.hoverImageGif.expan div.classFav:hover {
+  opacity: 1;
+}
+
+div.hoverImageGif.expan div.classFav i {
+  color: #572EE5;
+}
+
+div.hoverImageGif.expan div.classFav i.hoverIcon {
+  visibility: visible;
+  width: 20px;
+  height: 18px;
+}
+
+div.hoverImageGif.expan div.classFav i#hover {
+  display: block;
+}
+
+div.hoverImageGif.expan div.classDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 72%;
+  left: 78%;
+  opacity: 0.7;
+  width: 36px;
+  height: 36px;
+  padding: 2%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #572EE5;
+  background: #FFFFFF;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.classDown {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.classDown {
+    top: 86%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.hoverImageGif.expan div.classDown {
+    left: 74%;
+  }
+}
+
+div.hoverImageGif.expan div.classDown:hover {
+  opacity: 1;
+}
+
+div.hoverImageGif.expan div.classDown img.hoverIcon {
+  display: block;
+  visibility: visible;
+  width: 19.2px;
+  height: 21.1px;
+}
+
+div.hoverImageGif.expan div.textContainer {
+  display: block;
+  position: absolute;
+  top: 72%;
+  left: 16%;
+}
+
+@media screen and (min-width: 490px) {
+  div.hoverImageGif.expan div.textContainer {
+    top: 80%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.textContainer {
+    top: 86%;
+  }
+}
+
+div.hoverImageGif.expan div.textContainer h6 {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  margin-top: 2vh;
+  margin-bottom: 51px;
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan div.textContainer h6 {
+    width: 80%;
+  }
+}
+
+div.hoverImageGif.expan div.textContainer p {
+  display: block;
+  visibility: visible;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+}
+
+div.hoverImageGif.expan footer {
+  display: none;
+}
+
+div.hoverImageGif.expan main > section.head {
+  display: none;
+}
+
+div.hoverImageGif.expan main > section.trendings {
+  display: none;
+}
+
+div.hoverImageGif.expan header {
+  display: none;
+}
+
+div.hoverImageGif.expan img.cruz {
+  display: block;
+  position: absolute;
+  top: 14%;
+  left: 86%;
+  width: 13.8px;
+  height: 14px;
+}
+
+@media screen and (min-width: 620px) {
+  div.hoverImageGif.expan img.cruz {
+    top: 12%;
+    left: 89%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes {
+    content: '';
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .expanDes img.hovercard {
+    display: block;
+    opacity: 1;
+  }
+  .expanDes img {
+    display: block;
+    width: 459px;
+    height: 254px;
+    scroll-snap-align: center;
+    opacity: 1;
+    z-index: 25;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes img {
+    width: 580px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) {
+  .expanDes img {
+    width: 695px;
+    height: 385px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classFav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 66%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.classFav {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1300px) {
+  .expanDes div.classFav {
+    left: 64%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.classFav {
+    top: 78%;
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classFav:hover {
+    opacity: 1;
+  }
+  .expanDes div.classFav i {
+    display: block;
+    visibility: visible;
+    width: 20px;
+    height: 18px;
+  }
+  .expanDes div.classDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 70%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.classDown {
+    top: 78%;
+    left: 70.5%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1300px) {
+  .expanDes div.classDown {
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.classDown {
+    top: 78%;
+    left: 71.5%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classDown:hover {
+    opacity: 1;
+  }
+  .expanDes div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 19.2px;
+    height: 21.1px;
+  }
+  .expanDes div.classSupr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 74%;
+    left: 66%;
+    opacity: 0.7;
+    width: 36px;
+    height: 36px;
+    padding: 1%;
+    border: 1px solid #572EE5;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.classSupr {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1300px) {
+  .expanDes div.classSupr {
+    left: 64%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.classSupr {
+    top: 78%;
+    left: 68%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.classSupr:hover {
+    opacity: 1;
+  }
+  .expanDes div.textContainer {
+    display: block;
+    position: absolute;
+    top: 72%;
+    margin-right: 18%;
+    left: 26%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1200px) {
+  .expanDes div.textContainer {
+    top: 76%;
+    margin-right: 25%;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 1440px) and (max-width: 1590px) {
+  .expanDes div.textContainer {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.textContainer h6 {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    width: 60%;
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 950px) and (min-width: 620px) {
+  .expanDes div.textContainer h6 {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .expanDes div.textContainer p {
+    display: block;
+    visibility: visible;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-family: "Roboto", sans-serif;
+  }
+  .expanDes img.cruz {
+    display: block;
+    position: absolute;
+    top: 10.5%;
+    left: 72.5%;
+    width: 13.8px;
+    height: 14px;
+  }
+  .expanDes footer {
+    display: none;
+  }
+  .expanDes main > section.trendings {
+    display: none;
+  }
+  .expanDes header {
+    display: none;
+  }
+}
+
+main section.head h3.verMas.ACT {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #572EE5;
+  font-size: 0.8125rem;
+  padding: 17px 32px;
+  margin: 78px 0;
+  border-radius: 25px;
+  border: 1px solid #572EE5;
+  cursor: pointer;
+}
+
+main section.head h3.verMas.ACT:hover {
+  background-color: #572EE5;
+  color: #FFFFFF;
+}
+
+main section.head h3.verMasF.ACT {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #572EE5;
+  font-size: 0.8125rem;
+  padding: 17px 32px;
+  margin: 78px 0;
+  border-radius: 25px;
+  border: 1px solid #572EE5;
+  cursor: pointer;
+}
+
+main section.head h3.verMasF.ACT:hover {
+  background-color: #572EE5;
+  color: #FFFFFF;
+}
+
+div#titleGif.classFavoritos {
+  display: block;
+  color: #572EE5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 46px;
+}
+
+@media screen and (min-width: 1440px) {
+  div#titleGif.classFavoritos {
+    font-size: 1.5625rem;
+  }
+}
+
+div#titleGif.classTitleMisGifos {
+  display: block;
+  color: #572EE5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 46px;
+}
+
+@media screen and (min-width: 1440px) {
+  div#titleGif.classTitleMisGifos {
+    font-size: 1.5625rem;
+  }
+}
+
+main div.font-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 14fr 1fr;
+      grid-template-columns: 1fr 14fr 1fr;
+  gap: 10px;
+  padding: 0 3%;
+}
+
+@media screen and (min-width: 800px) {
+  main div.font-container {
+    gap: 35px;
+  }
+}
+/*# sourceMappingURL=two.main.css.map */

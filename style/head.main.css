@@ -1,0 +1,342 @@
+main section.head {
+  display: grid;
+  justify-items: center;
+}
+main section.head div.boxTitle {
+  padding: 7px 45px 0;
+}
+main section.head div.boxTitle h1 {
+  text-align: center;
+  font-size: 1.56rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(87, 46, 229, 0.9);
+}
+main section.head div.boxTitle h1 br {
+  display: none;
+}
+main section.head div.boxTitle h1 B {
+  font-size: 1.56rem;
+  color: #50E3C2;
+}
+main section.head img.imgSaludo {
+  width: 273px;
+  margin: 31px 51px 0 51px;
+}
+main section.head div#boxSearch-main {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 334px;
+  background: #FFFFFF;
+  border: 1px solid #572EE5;
+  border-radius: 27px;
+  padding: 10px 0;
+}
+main section.head div#boxSearch-main i#glassSearch {
+  visibility: hidden;
+  font-size: 14px;
+  width: 14px;
+  padding-left: 20px;
+  color: #9CAFC3;
+  position: relative;
+  right: 20px;
+}
+main section.head div#boxSearch-main i#glassSearchVis {
+  display: block;
+  color: #572EE5;
+  width: 18px;
+}
+main section.head div#boxSearch-main i.fas.fa-times {
+  color: #572EE5;
+}
+main section.head div#boxSearch-main input.search {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: none;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+}
+main section.head div#boxSearch-main div.suggest {
+  display: none;
+  flex-flow: column nowrap;
+  position: relative;
+  text-align: left;
+  top: 2vh;
+  width: 98%;
+  margin: 0 2.5px;
+  margin-bottom: 18px;
+  padding-left: 23px;
+  font-family: "Roboto", sans-serif;
+  border-top: 1px solid rgba(156, 175, 195, 0.5);
+  color: #9CAFC3;
+}
+main section.head div#boxSearch-main div.suggest label {
+  margin: 5px 0;
+}
+main section.head h2.tranding {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(87, 46, 229, 0.9);
+  margin: 31px 0 0 0;
+}
+main section.head p.textTran {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: #572EE5;
+  text-align: center;
+  line-height: 25px;
+  width: 225px;
+  margin-bottom: 35px;
+}
+main section.head img.heartIconF {
+  display: none;
+  margin: 10px 0 8px 0;
+}
+main section.head img.faceMisGifos {
+  display: none;
+  margin: 10px 0 8px 0;
+}
+main section.head img.favContentOff {
+  display: none;
+  margin-top: 14vh;
+  align-self: center;
+}
+main section.head img.mGContentOff {
+  display: none;
+  margin-top: 14vh;
+  align-self: center;
+}
+main section.head img#srchSinCont {
+  display: none;
+}
+main section.head h3#textSrchOff {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  color: #50E3C2;
+  margin: 37px 35vw 137px 35vw;
+  font-size: 1.375rem;
+  text-align: center;
+}
+main section.head h3#favTextOff {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  color: #50E3C2;
+  margin: 37px 35vw 137px 35vw;
+  font-size: 1.375rem;
+  text-align: center;
+}
+main section.head h3#textMiGif {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  color: #50E3C2;
+  margin: 37px 35vw 137px 35vw;
+  font-size: 1.375rem;
+  text-align: center;
+}
+main section.head div h3.titleSearch {
+  font-family: "Montserrat", sans-serif;
+  color: #572EE5;
+  font-size: 1.5rem;
+  margin-bottom: 36px;
+  padding-top: 43px;
+  border-top: 1px solid #9CAFC3;
+}
+main section.head div#containerSearch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+  row-gap: 25px;
+}
+main section.head div#containerSearch div.hoverSearch {
+  display: block;
+  width: 156px;
+  height: 120px;
+  background: #572EE5;
+}
+main section.head div#containerSearch div.hoverSearch div.classFav {
+  display: none;
+}
+main section.head div#containerSearch div.hoverSearch div.classDown {
+  display: none;
+}
+main section.head div#containerSearch div.hoverSearch div.classMax {
+  display: none;
+}
+main section.head div#containerSearch div.hoverSearch img {
+  display: block;
+  width: 156px;
+  height: 120px;
+}
+main section.head div#containerSearch div.hoverSearch div.textContainer {
+  display: none;
+}
+main section.head div#containerSearch div.hoverSearch img.cruz {
+  display: none;
+}
+main section.head h3.verMas {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  main section.head div.boxTitle h1 {
+    font-size: 2.187rem;
+  }
+  main section.head div.boxTitle h1 br {
+    display: inline;
+  }
+  main section.head div.boxTitle h1 B {
+    font-size: 2.187rem;
+  }
+  main section.head img.imgSaludo {
+    width: 399px;
+  }
+  main section.head div#boxSearch-main {
+    width: 551px;
+  }
+  main section.head div#boxSearch-main div.font-container i#glassSearch {
+    font-size: 24px;
+  }
+  main section.head div#boxSearch-main div.font-container i#glassSearchVis {
+    margin: 0% 0% 0% 55%;
+    font-size: 24px;
+  }
+  main section.head div#boxSearch-main div.font-container i.fas.fa-times {
+    font-size: 24px;
+  }
+  main section.head h2.tranding {
+    font-size: 1.125rem;
+  }
+  main section.head p.textTran {
+    margin: 7px 0 95px 0;
+    width: auto;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main section.head div#containerSearch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 21px;
+         column-gap: 21px;
+    row-gap: 25px;
+  }
+  main section.head div#containerSearch div.hoverSearch {
+    display: block;
+    width: 260px;
+    height: 200px;
+    background: #572EE5;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover {
+    display: block;
+    width: 260px;
+    height: 200px;
+    opacity: 0.9;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover img.imgSearch {
+    display: block;
+    opacity: 0.5;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classFav {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -191px;
+    left: 133px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classFav:hover {
+    opacity: 1;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classFav i {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+    color: #572EE5;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classDown {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -222px;
+    left: 176px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classDown:hover {
+    opacity: 1;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classDown img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classMax {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    top: -254px;
+    left: 218px;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classMax:hover {
+    opacity: 1;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.classMax img.hoverIcon {
+    display: block;
+    visibility: visible;
+    width: 18px;
+    height: 16px;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.textContainer {
+    display: flex;
+    flex-flow: wrap row;
+    flex-direction: column;
+    align-items: start;
+    align-content: start;
+    visibility: visible;
+    position: relative;
+    color: #FFFFFF;
+    top: -85%;
+    left: 18px;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.textContainer h6 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.head div#containerSearch div.hoverSearch:hover div.textContainer p {
+    display: block;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  main section.head div#containerSearch div.hoverSearch img {
+    display: block;
+    width: 260px;
+    height: 200px;
+  }
+  main section.head div#containerSearch div.hoverSearch div img.hoverIcon {
+    display: none;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=head.main.css.map */

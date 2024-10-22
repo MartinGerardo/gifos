@@ -1,0 +1,262 @@
+@import"variables";
+main{
+    section.trendings{
+        background: #F3F5F8;
+        padding-top: 42px;
+        padding-bottom: 82px;
+        div#boxTrending{
+            h2{
+                font-family: $montserratBold;
+                font-size: 1.25rem;
+                color: #572EE5;
+                text-align: center;
+                line-height: 30px;
+            }
+            p{
+                font-family:$roboto;
+                font-size: 1rem;
+                color: #000000;
+                text-align: center;
+                line-height: 23px;
+            }
+
+        }
+       div#boxGif{
+        div#leftBtn{
+            display: none;
+        }
+        div#rightBtn{
+            display: none;
+        }
+        div#containerTrendingsImg{
+            display: grid;
+            grid-template-columns: repeat(25, 1fr);
+            gap: 22px;
+            margin:0 32px;            
+            scroll-behavior: smooth;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            
+            div.hoverImageGif.hover{
+                img{
+                    display: block;
+                    width: 243px;
+                    height: 187px;
+                    margin: 0;
+                    padding: 0;
+                    scroll-snap-align: center;
+             
+                }
+                div.classFav{
+                    display: none;
+                }
+                div.classDown{
+                    display: none;
+                }
+                div{
+                    img.hoverIcon{
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+                div.classMax{
+                    display: none;
+                }
+                h6{
+                    display: none;
+                }
+                p{
+                    display: none;
+                }
+                img.cruz{
+                    display: none;
+                }
+            }
+            div.hoverImageGif{
+                div.classMax{
+                    display: none;
+                }
+            }
+        }
+       }
+    }
+}
+@media screen and (min-width: 950px){
+    main{
+        section.trendings{
+            div#boxGif{
+                display: grid;
+                grid-template-columns: 2fr 16fr 2fr;
+                justify-content: space-around;
+                gap: 10px;                
+                div#leftBtn{
+                    display:block;
+                    justify-self: right;
+                    margin: 130px 0;
+                    img{
+                        border: 1px solid $purpleType;
+                        padding: 13px 16px;                        
+                    }                    
+                }
+                div#rightBtn{
+                    display:block;
+                    justify-self: left;
+                    margin: 130px 0;
+                    img{
+                        border: 1px solid $purpleType;
+                        padding: 13px 16px;                        
+                    } 
+                }
+                div#containerTrendingsImg{
+                    gap: 29px;
+                    justify-content: space-between;
+                    margin:0;
+                    justify-self: stretch;
+                    overflow-x: hidden;
+                    scroll-snap-type: x mandatory;
+                    div.hoverImageGif{
+                    &.hover{
+                        // width: 357px;
+                        height: 275px;
+                        img.cruz{
+                            display: none;
+                        }
+                            &:hover{
+                                display: block;
+                                background: #572EE5;
+                                // width: 357px;
+                                // height: 275px;
+                                opacity: 0.9;
+                                img.cruz{
+                                    display: none;
+                                }
+                                img.hovercard{                            
+                                        display: block;
+                                        opacity: 0.5;
+                                }
+                                 div.classFav{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 32px;
+                                    height: 32px;
+                                    background: #FFFFFF;
+                                    position: relative;
+                                    top:-260px;
+                                    left: 226px;
+                                    align-items: center;
+                                    padding: 2%;
+                                    border-radius: 10px;
+                                    opacity: 0.7;
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                    i{
+                                        color: #572EE5;
+                                        visibility: visible;
+                                        align-items: center;
+                                        width: 18px;
+                                        height: 16px;
+                                    }
+
+                                }
+                                div.classDown{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 32px;
+                                    height: 32px;
+                                    background: #FFFFFF;
+                                    position: relative;
+                                    top:-292px;
+                                    left: 270px;
+                                    align-items: center;
+                                    padding: 3%;
+                                    border-radius: 10px;
+                                    opacity: 0.7;
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                    img.hoverIcon{
+                                        display:block;
+                                        visibility: visible;
+                                        width: 18px;
+                                        height: 16px;
+                                    }
+                                }
+                                div.classMax{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 32px;
+                                    height: 32px;
+                                    background: #FFFFFF;
+                                    position: relative;
+                                    top:-324px;
+                                    left: 314px;
+                                    align-items: center;
+                                    padding: 3%;
+                                    border-radius: 10px;
+                                    opacity: 0.7;
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                    img.hoverIcon{
+                                        display:block;
+                                        visibility: visible;
+                                        width: 18px;
+                                        height: 16px;
+                                    }
+                                }
+                                div.textContainer{
+                                    display: block;
+                                    visibility: visible;
+                                    color: #FFFFFF;
+                                    position: relative;
+                                    top: -66%;
+                                    margin-left: 18px;
+                                    
+                                    h6{
+                                        display: block;
+                                        // visibility: visible;
+                                        // color:#FFFFFF;
+                                        font-size: 1rem;
+                                        font-family: $roboto;
+                                        // position: relative;
+                                        // top:-185px;
+                                        // margin-left: 18.5px;
+                                        // margin-bottom: 51px;
+                                    }
+                                    p{
+                                        display: block;
+                                        // visibility: visible;
+                                        // color:#FFFFFF;
+                                        font-size: 15px;
+                                        font-family: $roboto;
+                                        // position: relative;
+                                        // top:-190px;
+                                        // margin-left: 18.5px;
+                                        // margin-bottom: 6px;
+                                    }
+                                }                            
+                            }
+
+                        img{
+                            width: 357px;
+                            height: 275px;
+                        }
+                        div{
+                            img.hoverIcon{
+                                display: none;
+                                visibility: hidden;
+                            }
+                        }
+
+                        
+
+                    }
+ 
+                }
+            }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1cce6f79b.js" crossorigin="anonymous"></script>
+    
+    <title>GiFos</title>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</head>
+<body id="light" class="light">
+    <header id="header">
+        <div id="logo">
+            <img src="img/logo-mobile.svg" class="imgDiurna" alt="logo"  tabindex="1">
+            <img src="img/logo-mobile-modo-noct.svg" class="imgDark" alt="logo"  tabindex="1">
+            <img src="img/logo-desktop.svg" alt="logo" class="imgDes"  tabindex="1">
+            <img src="img/logo-desktop-modo-noc.svg" class="imgDesNoc" alt="logo"  tabindex="1">
+        </div>
+        
+        <div id="boxSearch">
+            <input id="inputSearch-header" class="search" type="text" placeholder="Busca GIFOS y más" tabindex="2">
+            <button id="btn-header" tabindex="2">
+                <img src="img/icon-search.svg" class="lupaDia"  alt="lupa" >
+                <img src="img/icon-search-mod-noc.svg" class="lupaNoche" alt="lupa">
+            </button>
+        </div>
+        <input type="checkbox" name="menu" id="menu" class="menu" value="menu">
+        <label tabindex="1" for="menu" class="btnMenu" >              
+            <span class="linea"></span>
+            <span class="linea"></span>
+            <span class="linea"></span>
+        </label>
+        <nav class="container">
+            <ul class="box caja">
+                <li class="line"  tabindex="2"><a id="modoNocturno">Modo Nocturno</a></li>
+                <li class="linea"></li>
+                <li class="line" tabindex="3"><a href="#" id="favoritos">Favoritos</a></li>
+                <li class="linea"></li>
+                <li class="line" tabindex="4"><a href="#" id="mis-Gifos">Mis GIFOS</a></li>
+                <li class="linea"></li>
+                <li id="creaPropioGif" tabindex="5"><span><i class="fas fa-plus add-gif"></i></span></li>
+            </ul>
+        </nav>
+          
+    </header>
+    <main id="main" class="main">
+        <section id="head" class="head">
+            <div class="boxTitle" id="boxTitle">
+            <h1 tabindex="5">Inspírate, busca, guarda, y crea <br> los mejores <B>GIFOS</B></h1>
+
+            </div>
+
+            <img src="img/ilustra_header.svg" id="imgSaludo" class="imgSaludo" alt="grafica de saludo" tabindex="6">
+            
+            <div id="boxSearch-main">
+                <div class="font-container" id="caps">
+                    <i id="glassSearch" class="fas fa-search" tabindex="7"></i>
+                    <input id="inputSearch-main" class="search" type="text" placeholder="Busca GIFOS y más" tabindex="8">
+                   
+                    <i id="glassSearchVis" class="fas fa-search" tabindex="9"></i>
+                </div>
+                <div id="suggest" class="suggest"></div>
+                
+            </div>
+            <img src="img/icon-favoritos.svg" class="heartIconF" id="heartIconF" alt="Corazon icono de favoritos">
+            <img src="img/icon-mis-gifos.svg" id="faceMisGifos" class="faceMisGifos" alt="cara icono de mis gifos"/>            
+            <h2 class="tranding" id="headTitleTrendings" tabindex="11">Trending:</h2>
+            <p class="textTran" id="headDesTrendings" tabindex="12">Reactions, Entertainment, Sports, Stickers, Artists</p>           
+            <div class="titleGifs" id="titleGif" tabindex="12"></div>
+            <img src="img/icon-busqueda-sin-resultado.svg" class="srchSinCont" id="srchSinCont" alt="Imagen sin contenido">
+            <img src="img/icon-fav-sin-contenido.svg" class="favContentOff" id="favContentOff" alt="icon de favorito sin contenido">
+            <img src="img/icon-mis-gifos-sin-contenido.svg" id="mGContentOff" class="mGContentOff" alt="Icon de mis gifos sin contenido"/>
+            <h3 id="textSrchOff">Intenta con otra búsqueda.</h3>
+            <h3 id="favTextOff">"¡Guarda tu primer GIFO en Favoritos para que se muestre aqui!"</h3>
+            <h3 id="textMiGif">¡Anímate a crear tu primer GIFO!</h3>      
+           
+            <div id="containerMyGif" class="containerMyGif"></div>
+            <div id="containerFav" class="containerSearch"></div>
+            <div id="containerSearch"></div>
+
+            <h3 id="verMas" class="verMas" tabindex="13">VER MÁS</h3>
+            <h3 id="verMasF" class="verMasF" tabindex="13">VER MÁS</h3>
+        </section>
+        <section id="trendings" class="trendings">
+            <div id="boxTrending"> 
+                <h2>Trending GIFOS</h2>
+                <p>Mira los últimos<br> GIFOS de nuestra comunidad.</p>
+            </div>
+            <div id="boxGif">
+                <div id="leftBtn" tabindex="14">
+                    <img src="img/button-left.svg" alt="boton">
+                </div>
+                <div id = "containerTrendingsImg"></div>
+                <div id="rightBtn" tabindex="16">
+                    <img src="img/button-right.svg" alt="boton">
+                </div> 
+            </div>
+                       
+        </section>
+        <section id="sectionFilm" class="sectionFilm">
+            <div id="deco" class="deco">
+                <img src="img/camara.svg" id="camara" alt="camara decorativa"/>
+                <img src="img/camara-modo-noc.svg"  id="camaraNoc" alt="camara decorativa">
+                <img src="img/element-luz-camara.svg" alt="Luz de la camara decorativa" />
+                
+              </div>
+            <div id="boxFilm" class="boxFilm">
+                <div id="recordingStudio" class="recordingStudio">
+                  <div id="topLeft"></div>
+                  <div id="topRight"></div>
+                  <div id="recordingFilm">
+                    <p id="descripcion">Aquí podrás<br />crear tus propios <B>GIFOS</B></p>
+                    <p id="desPermiso">¡Crea tu GIFO en sólo 3 pasos!<br />(sólo necesitas una cámara para grabar un video)</p>
+                  </div>
+                  <div id="bottonLeft"></div>
+                  <div id="bottoRight"></div>
+                </div>
+                <div id="instancia">
+                  <h5 id="partOne" class="instancia">1</h5>
+                  <h5 id="partTwo" class="instancia">2</h5>
+                  <h5 id="partThree" class="instancia">3</h5>
+                </div>
+              </div>
+              <div class="film">
+                <img src="img/pelicula.svg" id="pelicula" alt="cinta de pelicula" />
+                <img src="img/pelicula-modo-noc.svg" id="peliculaNoc" alt="cinta de pelicula">
+              </div>
+              <div id="pie" class="pie">
+              <div id="lineaPur" class="lineaPur"></div>
+              <h4 id="BTN-letGoo" class="BTN-letGoo" tabindex="16">COMENZAR</h4>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="compartir">
+
+            <h5>Compartir en:</h5> 
+                       
+            <a class="redSingle" tabindex="18" target="_blank" href="https://www.facebook.com/GIPHY/"><i class="fab fa-facebook-f"></i></a>
+            <a class="redSingle" tabindex="19" target="_blank" href="https://twitter.com/giphy"><i class="fab fa-twitter"></i></a>
+            <a class="redSingle" tabindex="20" target="_blank" href="https://www.instagram.com/giphy/"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+        <h6 class="rightFooter">© GIFOS 2020 All Rights Reserved.</h6>
+    </footer>
+    <script src="js/busqueda.js"></script>
+    <script src="js/trendingsjs.js"></script>
+    <script src="js/functionalities.js"></script>
+    <script src="js/modoNocturno.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/creaGif.js"></script>
+</body>
+</html>
